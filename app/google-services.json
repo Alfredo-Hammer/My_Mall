@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "657663924509",
+    "project_id": "my-mall-f1b52",
+    "storage_bucket": "my-mall-f1b52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657663924509:android:5b02f8f40c5702f334e9f4",
+        "android_client_info": {
+          "package_name": "com.hammer67.mymall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657663924509-rkiregpfsmhv53lh9457qtanc2n4q4ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYUcudZ8MvkpD_Bt624w6RGupXevHiRDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657663924509-rkiregpfsmhv53lh9457qtanc2n4q4ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

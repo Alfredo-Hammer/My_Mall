@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".fragments.SingInFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ripple_background"/>
+
+        <TextView
+            android:id="@+id/tvShopName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Mall"
+            android:textSize="40sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/white"
+            android:layout_below="@id/imgClose"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/singIn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:layout_below="@id/tvShopName"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:drawablePadding="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shape_button"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/singIn_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:drawablePadding="5dp"
+            android:hint="Contraseña"
+            android:textSize="16sp"
+            android:layout_below="@id/singIn_email"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_button"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="10dp"
+            android:imeOptions="actionNext"/>
+
+        <TextView
+            android:id="@+id/singIn_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olvidaste tu contraseña?"
+            android:textColor="@color/white"
+            android:layout_below="@id/singIn_password"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignParentEnd="true"
+            android:background="?android:selectableItemBackground"
+            android:layout_marginEnd="16dp"/>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:enabled="false"
+            android:textColor="@color/enabled_btn_color"
+            android:layout_below="@id/singIn_forgot_password"
+            android:backgroundTint="@color/btn_color_grey"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:progressTint="@color/white"
+            android:layout_below="@id/btnLogin"/>
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No tengo cuenta REGISTRAR"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/progress_circular"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="30dp"
+            android:background="?selectableItemBackground"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

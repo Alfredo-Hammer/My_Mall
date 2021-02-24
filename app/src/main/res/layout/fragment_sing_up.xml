@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:id="@+id/fragment"
+    tools:context=".fragments.SingUpFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ripple_background"/>
+
+        <TextView
+            android:id="@+id/tvShopName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Mall"
+            android:textSize="40sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/white"
+            android:layout_below="@id/imgClose"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/singUp_fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:layout_below="@id/tvShopName"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_person"
+            android:drawablePadding="5dp"
+            android:inputType="text"
+            android:background="@drawable/shape_button"
+            android:padding="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/singUp_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:layout_below="@id/singUp_fullName"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:drawablePadding="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shape_button"
+            android:padding="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/singUp_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:drawablePadding="5dp"
+            android:hint="Contraseña"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/singUp_email"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_button"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="10dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/singUp_ConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar contraseña"
+            android:layout_below="@id/singUp_password"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_button"
+            android:padding="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:imeOptions="actionDone"/>
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:enabled="false"
+            android:textColor="#50ffffff"
+            android:layout_below="@id/singUp_ConfirmPassword"
+            android:backgroundTint="@color/btn_color_grey"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:progressTint="@color/white"
+            android:layout_below="@id/btnRegister"/>
+
+        <TextView
+            android:id="@+id/tvAlready"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ya tengo cuenta INICIAR"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/progress_circular"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:selectableItemBackground"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
